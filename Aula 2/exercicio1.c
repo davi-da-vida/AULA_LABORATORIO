@@ -12,29 +12,25 @@ int main() {
 
     if (x == 1) {
         printf("Digite dois números: ");
-        scanf("%f", &n1);
-        scanf("%f", &n2);
+        scanf("%f%f", &n1, &n2);
         total = n1 + n2;
         printf("A ADIÇÃO ENTRE %f E %f RESULTA EM %f.", n1, n2, total);
     }
     else if (x == 2) {
         printf("Digite dois números: ");
-        scanf("%f", &n1);
-        scanf("%f", &n2);
+        scanf("%f%f", &n1, &n2);
         total = n1 - n2;
         printf("A SUBTRAÇÃO ENTRE %f E %f RESULTA EM %f.", n1, n2, total);
     }
     else if (x == 3) {
         printf("Digite dois números: ");
-        scanf("%f", &n1);
-        scanf("%f", &n2);
+        scanf("%f%f", &n1, &n2);
         total = n1 * n2;
         printf("A MULTIPLICAÇÃO ENTRE %f E %f RESULTA EM %f.", n1, n2, total);
     }
     else if (x == 4) {
         printf("Digite dois números: ");
-        scanf("%f", &n1);
-        scanf("%f", &n2);
+        scanf("%f%f", &n1, &n2);
         if (n2 == 0)
             printf("NÃO É POSSÍVEL REALIZAR DIVISÃO POR ZERO.");
         else {
@@ -45,5 +41,5 @@ int main() {
     else
         printf("ENTRADA INVÁLIDA.");
 
-    return 0;
+return 0;
 }
