@@ -1,8 +1,18 @@
  #include <stdio.h>
 int main() {
-    int vetor1[5], vetor2[5], vetor[10], i;
+    int vetor1[5], vetor2[5], vetor[10], i, j;
+    j = 1;
     for(i = 0; i < 5; i++) {
-        scanf("%d%d", &vetor1[i], &vetor2[i]);
-
+        scanf("%d", &vetor1[i]);
+        vetor[j] = vetor1[i];
+        j = j + 2;
     }
+    j = 2;
+    for(i = 0; i < 5; i++) {
+        scanf("%d", &vetor2[i]);
+        vetor[j] = vetor2[i];
+        j = j + 2;
+    }
+    for(j = 0; j < 10; j++)
+        printf("VETORES MESCLADOS: %d", vetor[j]);
 }
