@@ -15,5 +15,5 @@ int main() {
     }
     printf("VETORES MESCLADOS:\n");
     for(j = 0; j < 10; j++)
-        printf("%d\n", vetor[j]);
+        printf("%d; ", vetor[j]);
 }
